@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #e3f2fd
+}
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    background: #293447;
+    overflow:hidden;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.game-score{
+    color:aliceblue;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.controls{
+    display: none;
+    justify-content: space-around;
+    font-size: 40px;
+}
+.play-board{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(40,1fr)/repeat(40,1fr);
+    background: #212837
+}
+.play-board .food{
+    background: #ff003d;
+}
+.play-board .head{
+    background: #60cbff;
+}
